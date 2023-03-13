@@ -1,0 +1,15 @@
+<div class="col">
+  <div class="bg-dark border-right p-3 gif-app-sidebar" id="sidebar">
+    <h1 class="text-light">Gifs App</h1>
+    <div class="list-group list-reset">
+      <a
+        *ngFor="let search of history"
+        (click)="searchGifWithHistory(search)"
+        href="#"
+        class="list-group-item list-group-item-action"
+      >
+        {{ search | titlecase }}
+      </a>
+    </div>
+  </div>
+</div>

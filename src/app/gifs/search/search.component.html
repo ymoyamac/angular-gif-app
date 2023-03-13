@@ -1,0 +1,16 @@
+<h3>Search</h3>
+
+<!-- <div
+  class="alert alert-danger"
+  role="alert"
+  #alert>
+  Oops... be sure to type a word
+</div> -->
+
+<input
+  type="text"
+  class="form-control"
+  placeholder="Search Gifs..."
+  (keyup.enter)="searchGif(txtSearch.value)"
+  #txtSearch
+>
